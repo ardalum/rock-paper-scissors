@@ -1,0 +1,20 @@
+In our UI, the player should be able to play the game by clicking on buttons rather than typing their answer in a prompt.
+For now, remove the logic that plays exactly five rounds.
+Create three buttons, one for each selection. Add an event listener to the buttons that call your playRound function with the correct playerSelection every time a button is clicked. (you can keep the console.logs for this step)
+Add a div for displaying results and change all of your console.logs into DOM methods.
+Display the running score, and announce a winner of the game once one player reaches 5 points.
+You will likely have to refactor (rework/rewrite) your original code to make it work for this. That’s OK! Reworking old code is an important part of a programmer’s life.
+
+1. remove for loop
+
+2. create 3 buttons for the player to select
+
+3. create an event listener that will produce the value of the button that was clicked by the player everytime a button was clicked
+
+4. add a div to display the result of each round of the game replace the console.log with the dom message
+
+5. display running score for both the computer and the user
+
+6. display a message of the result of the 5 round game
+
+7. the game should end when computer or player reaches 5 points
