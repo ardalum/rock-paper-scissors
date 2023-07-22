@@ -101,4 +101,10 @@ html {
   .center {
     width: 100vw;
   }
+
+  .message,
+  .result-message {
+    width: 100vw;
+    font-size: 30px;
+  }
 }
