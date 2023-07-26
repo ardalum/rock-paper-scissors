@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="game">
-      <div class="header">Rock, Paper, & Scissors Game</div>
+    <div class="header">
+      <h1 class="game-name">Rock, Paper, Scissors</h1>
+    </div>
+    <div class="scores">
+      <p class="scr1">Your Score: <span class="your-score"></span></p>
+      <p class="scr2">Computer Score: <span class="computer-score"></span></p>
+    </div>
+    <div class="message-cont">
+      <p class="message"></p>
+    </div>
 
-      <div class="message"></div>
-      <div class="score">
-        <div class="player-score">
-          <p class="score-name">Your Score: <span class="your-score"></span></p>
-        </div>
-        <div class="computer">
-          <p class="score-name">
-            Computer Score: <span class="computer-score"></span>
-          </p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="center">
-          <button class="btn1" value="rock">Rock</button>
-          <button class="btn2" value="paper">Paper</button>
-          <button class="btn3" value="scissors">Scissors</button>
-        </div>
-      </div>
+    <div class="button-container">
+      <button class="btn1 btn" value="rock">Rock</button>
+      <button class="btn2 btn" value="paper">Paper</button>
+      <button class="btn3 btn" value="scissors">Scissors</button>
+    </div>
 
+    <div class="reload-btn">
       <button class="reload"></button>
-      <h1 class="result-message"></h1>
-    </section>
+    </div>
+
+    <div class="result-msg">
+      <p class="result-message"></p>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
