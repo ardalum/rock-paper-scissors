@@ -88,12 +88,15 @@ const game = () => {
 
     if (scoreUser > scoreComputer) {
       messageResult("You won the game! Congratulations :)");
+      message("");
+      reloadBtn.textContent = "Restart";
     } else {
       messageResult("You lost! Try again :(");
+      message("");
+      reloadBtn.textContent = "TRY AGAIN!";
     }
 
-    reloadBtn.textContent = "Restart";
-    reloadBtn.style.display = "flex";
+    reloadBtn.style.display = "block";
     reloadBtn.addEventListener("click", () => {
       window.location.reload();
     });
