@@ -3,11 +3,14 @@
 const game = () => {
   let scoreUser = 0;
   let scoreComputer = 0;
+  let pointsLeft = 5;
+
   const rckBtn = document.querySelector(".btn1");
   const pprBtn = document.querySelector(".btn2");
   const scsBtn = document.querySelector(".btn3");
   const playerOptions = [rckBtn, pprBtn, scsBtn];
 
+  document.querySelector(".number-game").textContent = pointsLeft;
   document.querySelector(".your-score").textContent = scoreUser;
   document.querySelector(".computer-score").textContent = scoreComputer;
 
@@ -54,6 +57,8 @@ const game = () => {
       } else {
         message(`You Won! ${click} beats ${computerResult}`);
         scoreUser++;
+        pointsLeft--;
+        document.querySelector(".number-game").textContent = pointsLeft;
         document.querySelector(".your-score").textContent = scoreUser;
       }
     } else if (click === "paper") {
@@ -64,6 +69,8 @@ const game = () => {
       } else {
         message(`You Won! ${click} beats ${computerResult}`);
         scoreUser++;
+        pointsLeft--;
+        document.querySelector(".number-game").textContent = pointsLeft;
         document.querySelector(".your-score").textContent = scoreUser;
       }
     } else if (click === "scissors") {
@@ -74,6 +81,8 @@ const game = () => {
       } else {
         message(`You Won! ${click} beats ${computerResult}`);
         scoreUser++;
+        pointsLeft--;
+        document.querySelector(".number-game").textContent = pointsLeft;
         document.querySelector(".your-score").textContent = scoreUser;
       }
     }

@@ -14,6 +14,18 @@ body {
   justify-content: center;
 }
 
+.round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(194, 118, 118);
+}
+
 .game-name {
   font-size: 40px;
   text-align: center;
@@ -97,4 +109,5 @@ body {
 .result-message {
   font-size: 50px;
   font-weight: bolder;
+  color: rgb(141, 8, 8);
 }
