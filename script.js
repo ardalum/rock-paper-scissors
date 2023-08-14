@@ -113,3 +113,11 @@ const game = () => {
 };
 
 game();
+
+// footer year
+
+const year = document.querySelector(".year");
+
+const currentYear = new Date().getFullYear();
+
+year.textContent = currentYear;
